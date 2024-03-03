@@ -1,0 +1,133 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li, ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header, nav, .workshop, footer {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+h1, h2, h3 {
+    color: #009688;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #009688;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Workshop section styling */
+.workshop {
+    position: relative;
+    padding-top: 60px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.workshop h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.workshop p, .workshop ul, .workshop ol {
+    margin-bottom: 15px;
+}
+
+.workshop h3 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.workshop ul, .workshop ol {
+    margin-left: 20px;
+}
+
+.workshop-video {
+    margin-top: 20px;
+}
+
+.workshop:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Workshop specific background images */
+.workshop:nth-child(odd) {
+    background-image: url('workshop_bg1.jpg');
+    background-size: cover;
+}
+
+.workshop:nth-child(even) {
+    background-image: url('workshop_bg2.jpg');
+    background-size: cover;
+}
+
+/* Animation for header and workshop sections */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+header, .workshop {
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+.register-button {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.register-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.register-link:hover {
+    background-color: #E64A28;
+}
